@@ -89,7 +89,7 @@ class TimeTable:
                          data[class_id][date][time]["instructor"],
                          data[class_id][date][time]["total time"],
                          data[class_id][date][time]["room number"]]
-            tuple_child = [(time, "Class Name"), (time, "Instructor"),
+            tuple_child = [(time, "Event"), (time, "Instructor"),
                            (time, "Total Time"), (time, "Room Number")]
             tuple_list += tuple_child
             data_list_parent += data_list
