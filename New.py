@@ -70,9 +70,16 @@ class RoomNew(FileFunction, TimeFunction):
         self.room_number_label = Label(self.New_canvas, text="ROOM NUMBER:", font=FONT_TEXT,
                                        background=DONKEY_BROWN, foreground="#fff")
         self.room_number_label.place(x=75, y=310)
+        #replace entry by dropdown menu
+        room_list = ["101", "102", "103", "104", "105","201","202","203","204","205","lab1", "lab2", "lab3", "Aud1","Aud2"]
+        self.clicked = StringVar()
+        self.clicked.set(room_list[0])
 
-        self.room_number_entry = Entry(self.New_canvas, width=20, highlightthickness=0, borderwidth=0)
-        self.room_number_entry.place(x=250, y=322)
+        self.room_number_dropdown = OptionMenu(self.New_window, self.clicked, *room_list)
+        self.room_number_dropdown.place(x=280, y=335)
+
+        # self.room_number_entry = Entry(self.New_canvas, width=20, highlightthickness=0, borderwidth=0)
+        # self.room_number_entry.place(x=250, y=322)
 
         # Button inside canvas
 
@@ -110,7 +117,8 @@ class RoomNew(FileFunction, TimeFunction):
         date = self.date_entry.get()
         time_from = self.time_from_entry.get()
         time_to = self.time_to_entry.get()
-        room_number = self.room_number_entry.get()
+        room_number = self.clicked.get()
+        # room_number= self.room_number_entry.get()
         total_time = self.time_calculation(time_from, time_to)
 
         if len(class_id) == 0 or len(class_name) == 0 or len(instructor) == 0 or len(date) == 0 or len(time_from) == 0 or len(time_to) == 0 or len(room_number) == 0:
