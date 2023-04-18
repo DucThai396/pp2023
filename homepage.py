@@ -12,11 +12,11 @@ class HomePageUI:
         self.window.title("Room Management System")
         self.window.config(padx=20, pady=20, bg=ALMOND_FROST)
 
-        New_btn_img = PhotoImage(file="img/new_button.png")
-        check_out_btn_img = PhotoImage(file="img/remove_button.png") 
-        room_info_btn_img = PhotoImage(file="img/room_information_button.png")
-        timetable_btn_img = PhotoImage(file="img/time_table_button.png")
-        class_info_btn_img = PhotoImage(file="img/class_info_img.png")
+        New_btn_img = PhotoImage(file="img/Add_schedule_but.png")
+        check_out_btn_img = PhotoImage(file="img/Delete_schedule_but.png") 
+        room_info_btn_img = PhotoImage(file="img/room_information_but.png")
+        timetable_btn_img = PhotoImage(file="img/Time_table_but.png")
+        #class_info_btn_img = PhotoImage(file="img/class_info_img.png")
         exit_btn_img = PhotoImage(file="img/exit_button.png")
 
         # Label
