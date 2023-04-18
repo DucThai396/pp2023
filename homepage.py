@@ -15,7 +15,7 @@ class HomePageUI:
         New_btn_img = PhotoImage(file="img/Add_schedule_but.png")
         check_out_btn_img = PhotoImage(file="img/Delete_schedule_but.png") 
         room_info_btn_img = PhotoImage(file="img/room_information_but.png")
-        timetable_btn_img = PhotoImage(file="img/Time_table_but.png")
+        timetable_btn_img = PhotoImage(file="img/Timetable_but.png")
         #class_info_btn_img = PhotoImage(file="img/class_info_img.png")
         exit_btn_img = PhotoImage(file="img/exit_button.png")
 
